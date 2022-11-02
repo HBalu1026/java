@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div>
+        <label for="nev_bekuld">Megrendelő neve:</label>
+        <input type="text" id="nev_bekuld" name="nev_bekuld" onfocus="beszinez_nev()" onblur="kiszinez_nev()"><br><br>
+        <label for="cim_bekuld">Megrendelő címe:</label>
+        <input type="text" id="cim_bekuld" name="cim_bekuld" onfocus="beszinez_cim()" onblur="kiszinez_cim()"><br><br>
+        <label for="tel_bekuld">Megrendelő telefonszáma:</label>
+        <input type="text" id="tel_bekuld" name="tel_bekuld" onfocus="beszinez_tel()" onblur="kiszinez_tel()"><br><br>
+        <button onclick="elkuld()">Elküld</button>
+    </div>
+    <div>
+        <p>Visszaigazolás!</p>
+        Név: <span id="">?</span><br>
+        Cím: <span id="">?</span><br>
+        Telefon: <span id="">?</span>
+        
+    </div>
+</body>
+</html>
